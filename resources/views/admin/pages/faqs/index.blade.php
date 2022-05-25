@@ -1,7 +1,7 @@
 @extends('admin.layout.table-form')
 
 @section('table')
-
+ 
     <div class="registers">
         <div class="desktop-two-columns">
             <div class="column">
@@ -37,7 +37,10 @@
 @endsection
 
 @section('form')
-    <form class="admin-form">
+    <form class="admin-form" action="{{route("faqs_store")}}">
+
+        <input type="hidden" name="id">
+
         <div class="panel">
             <div class="desktop-two-columns" id="color-panel">
                 <div class="column">
@@ -51,55 +54,37 @@
                 </div>
 
                 <div class="column">
-                    @include('admin.components.desktop.items-options')
+                    @include('admin.components.desktop.items-options', ['route' => 'faqs'])
                 </div>
             </div>
 
-            <div class="category">
-                <div class="form-group">
-                    <div class="form-label">
-                        <label for="">Catalogo</label>
-                    </div>
-                    <div class="form-select">
-                        <select name="categoria" id="">
-                            <option value="cosa">Seleccionar</option>
-                        </select>
-                    </div>
-                </div>
+            <div class="desktop-one-column">
                 <div class="form-group">
                     <div class="form-label">
                         <label for="">Nombre</label>
                     </div>
                     <div class="form-input">
-                        <input type="text">
+                        <input name="name" type="text">
                     </div>
                 </div>
             </div>
 
-            <div class="language">
-                <div class="form-button">
-                    <button>Español</button>
-                    <button>Ingles</button>
-                    <button>Frances</button>
-                </div>
-            </div>
-
-            <div class="description">   
+            <div class="desktop-one-column">   
                 <div class="form-group">
                     <div class="form-label">
                         <label for="">Titulo</label>
                     </div>
                     <div class="form-input">
-                        <input type="text">
+                        <input  type="text" name="title">
                     </div>
                 </div>
             </div>
 
             <div class="text-editor">
                 <div>
-                    <label for="">Nombre</label>
+                    <label for="">Descripción</label>
                 </div>
-                <textarea class="editor" id="ckeditor"></textarea>
+                <textarea class="editor" name="description" id="ckeditor"></textarea>
             </div>
         </div>
     </form>

@@ -9,7 +9,11 @@ export let renderForm = () => {
     //     renderForm();
     // }), {once: true});
 
-    
+    document.addEventListener("loadForm", (event => {
+        formContainer.innerHTML = event.detail.form;
+
+    }), {once: true});
+
     if(createButton){
 
         createButton.addEventListener("click", () => {
@@ -99,6 +103,7 @@ export let renderForm = () => {
                     Object.entries(ckeditors).forEach(([key, value]) => {
                         data.append(key, value.getData());
                     });
+                    
                 }
 
                 /*

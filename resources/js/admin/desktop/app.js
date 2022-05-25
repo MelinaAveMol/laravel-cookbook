@@ -1,6 +1,7 @@
 import {renderTabs} from './tabs.js';
 import {renderPlusMinusButton} from './plus-minus-button.js';
 import {renderForm} from './form.js';
+import {renderTable} from './table.js';
 import {renderProduct} from './product.js';
 import {renderNotifications} from './notifications.js';
 import {renderCkeditor} from "./ckeditor.js";
@@ -22,3 +23,4 @@ renderProduct();
 renderTabs();
 renderPlusMinusButton();
 renderForm();
+renderTable();
