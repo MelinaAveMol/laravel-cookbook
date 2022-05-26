@@ -76,7 +76,7 @@
                         <label for="">Nombre</label>
                     </div>
                     <div class="form-input">
-                        <input  type="text" name="name" value="">
+                        <input  type="text" name="name" value="{{isset($faq->name) ? $faq->name : ''}}">
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                         <label for="">Titulo</label>
                     </div>
                     <div class="form-input">
-                        <input  type="text" name="title" >
+                        <input  type="text" name="title" value="{{isset($faq->title) ? $faq->title : ''}}">
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 <div>
                     <label for="">Descripción</label>
                 </div>
-                <textarea class="editor" name="description" id="ckeditor"></textarea>
+                <textarea class="editor" name="description" id="ckeditor">{{isset($faq->description) ? $faq->description : ''}}</textarea>
             </div>
         </div>
     </form>

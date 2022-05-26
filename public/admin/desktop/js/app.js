@@ -110,6 +110,8 @@ __webpack_require__.r(__webpack_exports__);
 var renderCkeditor = function renderCkeditor() {
   document.addEventListener("renderFormModules", function (event) {
     renderCkeditor();
+  }, {
+    once: true
   });
   window.ckeditors = [];
   document.querySelectorAll('.ckeditor').forEach(function (ckeditor) {
@@ -258,10 +260,12 @@ var renderForm = function renderForm() {
   var formContainer = document.querySelector(".form-container");
   var storeButton = document.querySelector('.save');
   var createButton = document.querySelector('.clean');
-  var forms = document.querySelectorAll('.admin-form'); // document.addEventListener("renderFormModules",( event =>{
-  //     renderForm();
-  // }), {once: true});
-
+  var forms = document.querySelectorAll('.admin-form');
+  document.addEventListener("renderFormModules", function (event) {
+    renderForm();
+  }, {
+    once: true
+  });
   document.addEventListener("loadForm", function (event) {
     formContainer.innerHTML = event.detail.form;
   }, {
@@ -550,6 +554,8 @@ var renderTable = function renderTable() {
   var deleteButtons = document.querySelectorAll(".delete-button");
   document.addEventListener("loadTable", function (event) {
     tableContainer.innerHTML = event.detail.table;
+  }, {
+    once: true
   });
   document.addEventListener("renderTableModules", function (event) {
     renderTable();
@@ -586,6 +592,7 @@ var renderTable = function renderTable() {
                         }
                       }));
                       document.dispatchEvent(new CustomEvent('renderFormModules'));
+                      document.dispatchEvent(new CustomEvent('renderTableModules'));
                     })["catch"](function (error) {
                       if (error.status == '500') {
                         console.log(error);

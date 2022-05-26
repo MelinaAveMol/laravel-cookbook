@@ -629,6 +629,24 @@ form .form-send-button button:hover {
   transition: 0.2s all;
 }
 
+.modal-container {
+  position: fixed;
+  z-index: 1;
+  width: 50%;
+}
+
+.textbox-content {
+  margin-top: 12em;
+  margin-left: 30em;
+  background-color: grey;
+}
+
+.textbox-buttons {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
 .filters {
   background: #2A70D5;
 }

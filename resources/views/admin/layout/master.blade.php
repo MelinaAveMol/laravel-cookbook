@@ -19,6 +19,7 @@
 
         @include('admin.layout.partials.header')
         @include("admin.components.desktop.filters")
+        @include('admin.components.desktop.modal_delete')
         @include('admin.components.desktop.title' , ['title' => "PANEL DE ADMINISTRACION"])
 
         <main>
