@@ -1,6 +1,6 @@
 export let renderForm = () => {
 
-    let formContainer = document.querySelector(".form");
+    let formContainer = document.querySelector(".form-container");
     let storeButton = document.querySelector('.save');
     let createButton = document.querySelector('.clean');
     let forms = document.querySelectorAll('.admin-form');

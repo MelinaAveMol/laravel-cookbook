@@ -157,6 +157,8 @@ class FaqController extends Controller
 
     public function edit(Faq $faq)
     {
+        debugbar::info($faq);
+
         $view = View::make('admin.pages.faqs.index')
         ->with('faq', $faq)
         ->with('faqs', $this->faq->where('active', 1)->get());   

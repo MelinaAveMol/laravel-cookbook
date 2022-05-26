@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="column-main">
-                <div class="form">
+                <div class="form-container">
                     @yield('form')
                 </div>
             </div>
