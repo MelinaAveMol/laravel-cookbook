@@ -390,6 +390,7 @@ h5, h6 {
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li {
+  color: hsl(0deg, 0%, 0%);
   font-family: "Montserrat", sans-serif;
 }
 

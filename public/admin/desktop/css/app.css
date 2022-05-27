@@ -390,6 +390,7 @@ h5, h6 {
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li {
+  color: hsl(0deg, 0%, 0%);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1360,7 +1361,7 @@ form .form-send-button button:hover {
   border-top: hsl(0deg, 4%, 85%) 5px solid;
   border-bottom: hsl(0deg, 4%, 85%) 5px solid;
 }
-.admin-panel .registers .registers-dates label {
+.admin-panel .registers .registers-data label {
   font-size: 0.8rem;
   color: black;
 }
@@ -1585,6 +1586,7 @@ form .form-send-button button:hover {
   width: 75%;
   margin: auto;
   padding-bottom: 5rem;
+  margin-right: 5em;
 }
 .admin-panel .panel .text-editor textarea {
   width: 100%;

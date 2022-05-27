@@ -13,7 +13,7 @@
         border-top: hsl(0, 4%, 85%) 5px solid;
         border-bottom: hsl(0, 4%, 85%) 5px solid;
 
-        .registers-dates{
+        .registers-data{
            
             label{
                 font-size: 0.8rem;
@@ -191,8 +191,12 @@
 
             .form-group{
                  text-align: center;
+
+                 
                 .form-label{
                     padding: 0.5rem;
+                    
+
                     label{
                         color: black;
                         font-weight: 600;
@@ -211,6 +215,7 @@
 
                 .form-input{
                     padding: 0.5rem;
+                    
                     input{
                         border-style: none;
                         border-bottom: 2px hsl(0, 4%, 85%) solid;
@@ -256,7 +261,9 @@
                         text-align: center;
                         border-style: none;
                         border-bottom: 2px hsl(0, 4%, 85%) solid;
-                        width: 100%;                
+                        width: 100%;
+                      
+                            
                     }
                 }
             }
@@ -266,6 +273,8 @@
             width: 75%;
             margin: auto;
             padding-bottom: 5rem;
+            margin-right: 5em;
+
 
 
             textarea{
