@@ -1,0 +1,30 @@
+.tab-panel {
+    display: flex;
+}
+
+.tab {
+    color : rgb(129, 119, 119);
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+}
+
+.tab.active{
+    background-color: rgb(241, 100, 100);
+    color: hsl(0, 0%, 100%);
+}
+
+.tab-panel-related{
+    margin-bottom: 1rem;
+}
+
+.tab-related{
+    color: rgb(129, 119, 119);
+    display: none;
+    padding: 1rem;    
+}
+
+.tab-related.active{
+    background-color: rgb(240, 230, 230);
+    color: hsl(0, 2%, 24%);
+    display: block;
+}

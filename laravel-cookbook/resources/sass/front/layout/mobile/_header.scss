@@ -1,0 +1,100 @@
+
+.header-main {  
+    padding-top: 5%;
+    padding-left: 5%;
+    max-width:980px;
+}
+
+.header-main-title h2{
+   color:red;
+}
+
+.header-menu{
+    
+    background-color: hsl(0, 63%, 60%);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    left: -100%;
+    transition: left 0.5s;
+    width: 100%;
+    z-index: 5000;
+    
+
+    ul{
+        font-size: 1.5em;
+        color:white;
+        text-align: center;
+        line-height:3.5em;
+        margin-top: 5em;
+
+    }
+}
+
+.header-menu.active{
+    left: 0;
+    transition: left 0.5s;
+}
+
+.header-menu-button{
+
+    position: absolute;
+    right: 0;
+    z-index: 5000;
+
+    svg{
+        width: 3rem;
+ 
+       
+    }
+}
+
+.header-menu-button-toggle {
+
+	fill:rgb(0, 0, 0);
+	pointer-events:all; //needs to be there so the hover works
+	cursor:pointer;
+
+	.bar {
+		-webkit-transform:rotate(0) translateY(0) translateX(0);
+		transform:rotate(0) translateY(0) translateX(0);
+		opacity:1;
+		-webkit-transform-origin: 20px 10px;
+		transform-origin: 20px 10px;
+		-webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+	    transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+	}
+
+    .bar:nth-of-type(1) {
+        -webkit-transform-origin: 20px 10px;
+		transform-origin: 20px 10px;
+    }
+
+    .bar:nth-of-type(3) {
+        -webkit-transform-origin: 20px 20px;
+		transform-origin: 20px 20px;
+
+    }
+}
+
+.header-menu-button.active{
+
+    .header-menu-button-toggle{
+
+        .bar:nth-of-type(1) {
+    
+            -webkit-transform:rotate(-45deg) translateY(0) translateX(0);
+            transform:rotate(-45deg) translateY(0) translateX(0);
+        }
+    
+        .bar:nth-of-type(2) {
+            opacity:0;
+        }
+    
+        .bar:nth-of-type(3) {
+            -webkit-transform:rotate(45deg) translateY(0em) translateX(0em);
+            transform:rotate(45deg) translateY(0em) translateX(0em);
+        }
+    }
+}
+
