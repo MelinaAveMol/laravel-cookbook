@@ -19,15 +19,16 @@
 
         @include('admin.layout.partials.header')
         @include("admin.components.desktop.filters")
-        @include('admin.components.desktop.modal_delete')
-        @include('admin.components.desktop.title' , ['title' => "PANEL DE ADMINISTRACION"])
+        {{-- @include('admin.components.desktop.modal_delete') --}}
 
+        @include('admin.components.desktop.title' , ['title' => "PANEL DE ADMINISTRACION"])
         <main>
             @yield('content')
+            @yield('admin.layout.table-form.blade.php')
         </main>
 
         @include('admin.layout.partials.footer')
         @include('admin.layout.partials.js')
-
+        
     </body>
 </html>

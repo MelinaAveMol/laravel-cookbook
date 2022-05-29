@@ -7,7 +7,7 @@
             <div class="registers">
                 <div class="desktop-two-columns">
                     <div class="column">
-                        <div class="registers-dates">
+                        <div class="registers-data">
                             <div><label for="">ID:<span>{{$faq_element->id}}</span></label></div>
                             <div><label for="">Nombre:<span>{{$faq_element->name}}</span></label></div>
                             <div><label for="">Creado el:<span>{{$faq_element->created_at}}</span></label></div>

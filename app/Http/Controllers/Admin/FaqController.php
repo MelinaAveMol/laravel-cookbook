@@ -117,7 +117,7 @@ class FaqController extends Controller
         ->with('faq', $this->faq)
         ->renderSections();
 
-        debugbar::info($view['form']);
+        // debugbar::info($view['form']);
 
         /*
             En la siguiente línea estamos devolviendo una respuesta a la petición AJAX, una petición AJAX hará que una parte de la página
