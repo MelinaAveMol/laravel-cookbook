@@ -5,11 +5,11 @@
         </div>
         <div class="textbox-buttons">
             <div>
-                <button>Si</button>
+                <button id="delete-confirm">Si</button>
             </div>
     
             <div>
-                <button>No</button>
+                <button id="delete-cancel">No</button>
             </div>
     
         </div>
