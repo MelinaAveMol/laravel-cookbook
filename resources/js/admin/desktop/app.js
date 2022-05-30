@@ -10,7 +10,7 @@ import {renderEdit} from "./edit";
 import {renderClean} from './clean.js';
 import {renderAccordion } from './accordion.js';
 import {renderFilters} from './filters.js';
-
+import {renderModalDelete} from './modalDelete.js';
 
 renderFilters();
 renderAccordion();
@@ -24,3 +24,4 @@ renderTabs();
 renderPlusMinusButton();
 renderForm();
 renderTable();
+renderModalDelete();

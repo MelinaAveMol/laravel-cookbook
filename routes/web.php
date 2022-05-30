@@ -53,11 +53,29 @@ Route::group(['prefix' => 'admin'], function () {
             'destroy' => 'faqs_destroy',
             'show' => 'faqs_show',
         ]
+
     ]);
 
-    Route::resource('products', 'App\Http\Controllers\Admin\ProductController', [
+    
+    Route::resource('productos/categorias', 'App\Http\Controllers\Admin\ProductCategoryController', [
         'parameters' => [
-            'products' => 'product', 
+            'categorias' => 'product_category', 
+        ],
+        'names' => [
+            'index' => 'product_categories',
+            'create' => 'product_categories_create',
+            'edit' => 'product_categories_edit',
+            'store' => 'product_categories_store',
+            'destroy' => 'product_categories_destroy',
+            'show' => 'product_categories_show',
+        ]
+        
+    ]);
+    
+
+    Route::resource('productos', 'App\Http\Controllers\Admin\ProductController', [
+        'parameters' => [
+            'productos' => 'product', 
         ],
         'names' => [
             'index' => 'products',
@@ -68,7 +86,7 @@ Route::group(['prefix' => 'admin'], function () {
             'show' => 'products_show',
         ]
     ]);
-    
+
 });
 
 
@@ -80,5 +98,10 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('front.pages.home.desktop.products');
 });
+
+Route::get('/', function () {
+    return view('front.pages.home.desktop.product_categories');
+});
+
 
 
