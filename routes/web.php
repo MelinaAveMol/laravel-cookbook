@@ -55,6 +55,47 @@ Route::group(['prefix' => 'admin'], function () {
         ]
 
     ]);
+    Route::resource('customers', 'App\Http\Controllers\Admin\CustomerController', [
+        'parameters' => [
+            'customers' => 'customer', 
+        ],
+        'names' => [
+            'index' => 'customers',
+            'create' => 'customers_create',
+            'edit' => 'customers_edit',
+            'store' => 'customers_store',
+            'destroy' => 'customers_destroy',
+            'show' => 'customers_show',
+        ]
+
+    ]);
+    Route::resource('contactos', 'App\Http\Controllers\Front\ContactController', [
+        'parameters' => [
+            'contactos' => 'contact', 
+        ],
+        'names' => [
+            'index' => 'contacts',
+            'create' => 'contacts_create',
+            'edit' => 'contacts_edit',
+            'store' => 'contacts_store',
+            'destroy' => 'contacts_destroy',
+            'show' => 'contacts_show',
+        ]
+        
+    ]);
+    Route::resource('usuarios', 'App\Http\Controllers\Admin\UserController', [
+        'parameters' => [
+            'usuarios' => 'user', 
+        ],
+        'names' => [
+            'index' => 'users',
+            'create' => 'users_create',
+            'edit' => 'users_edit',
+            'store' => 'users_store',
+            'destroy' => 'users_destroy',
+            'show' => 'users_show',
+        ]
+    ]);
 
     
     Route::resource('productos/categorias', 'App\Http\Controllers\Admin\ProductCategoryController', [
@@ -90,18 +131,27 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('front.pages.home.desktop.home');
 });
 
 
-Route::get('/', function () {
+Route::get('/products', function () {
     return view('front.pages.home.desktop.products');
 });
 
-Route::get('/', function () {
+Route::get('/product_category', function () {
     return view('front.pages.home.desktop.product_categories');
 });
+Route::get('/user', function () {
+    return view('front.pages.home.desktop.users');
+
+});
+
+Route::get('/contact', function () {
+    return view('front.pages.home.desktop.contacts');
+});
+
 
 
 

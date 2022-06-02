@@ -11,9 +11,9 @@
                         <div class="desktop-two-columns">
                             <div class="column">
                                 <label for="name">Nombre</label><input type="text">
-                                <label for="telephone">Teléfono</label><input type="text">
+                                <label for="mobile">Teléfono</label><input type="text">
                                 <label for="city">Ciudad</label>
-                                <select name="provincia" size="1">
+                                <select name="province" size="1">
                                     <option value='selecciona'>Selecciona</option>
                                     <option value='A Coruña'>A Coruña</option>
                                     <option value='álava'>álava</option>
@@ -73,7 +73,7 @@
                             <div class="column">
                                 <label for="surname">Apellidos</label><input type="text">
                                 <label for="email">Email</label><input type="text">
-                                <label for="pc">Código postal</label><input type="text">
+                                <label for="zipcode">Código postal</label><input type="text">
                             </div>
                         </div>
                         <div class="mobile-one-column">

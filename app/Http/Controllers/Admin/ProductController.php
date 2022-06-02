@@ -70,12 +70,13 @@ class ProductController extends Controller
             'title' => request('title'),
             'price' => request('price'),
             'description' => request('description'),
+            'category_id' => request('category_id'),
             'features' => request('features'),
             'visible' => 1,
             'active' => 1,
     ]);
 
-    $product = View::make('admin.pages.products.index')
+    $view = View::make('admin.pages.products.index')
         ->with('products', $this->product->where('active', 1)->get())
         ->with('product', $product)
         ->renderSections();        
