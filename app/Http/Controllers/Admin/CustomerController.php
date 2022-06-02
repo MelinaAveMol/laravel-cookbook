@@ -85,6 +85,8 @@ class CustomerController extends Controller
         $view = View::make('admin.pages.customers.index')
                 ->with('customer', $this->customer)
                 ->with('customers', $this->customer->where('active', 1)->get());
+                //orderBy('created_at', 'desc')->get());
+                //paginate($this->paginate));
             
       
         // Debugbar::info($view);
