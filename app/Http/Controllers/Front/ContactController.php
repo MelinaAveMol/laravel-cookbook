@@ -33,19 +33,17 @@ class ContactController extends Controller
 
         
 
-        $view = View::make('front.pages.contacts.index')
-                ->with('contact', $this->contact)
-                ->with('contacts', $this->contact->where('active', 1)->get());
-            
+        $view = View::make('front.pages.contact.contact');
+                
       
-        // Debugbar::info($view);
+        //Debugbar::info($view);
 
         if(request()->ajax()) {
             
             $sections = $view->renderSections();
                 
             return response()->json([
-                'table' => $sections['table'],
+            
                 'form' => $sections['form'],
             ]); 
         }
@@ -53,21 +51,6 @@ class ContactController extends Controller
         return $view;
     }
 
-    public function create()
-    {
-        
-
-       $view = View::make('front.pages.contacts.index')
-        ->with('contact', $this->contact)
-        ->renderSections();
-
-        // debugbar::info($view['form']);
-
-
-        return response()->json([
-            'form' => $view['form']
-        ]);
-    }
 
     public function store(contactRequest $request)
     {            
@@ -76,59 +59,22 @@ class ContactController extends Controller
         $contact = $this->contact->updateOrCreate([
                 'id' => request('id')],[
                 'name' => request('name'),
-                'title' => request('title'),
-                'description' => request('description'),
-                'visible' => 1,
+                'surname' => request('surname'),
+                'mobile' => request('mobile'),
+                'email' => request('email'),
+                'message' => request('message'),
                 'active' => 1,
         ]);
             
-        $view = View::make('front.pages.contacts.index')
+        $view = View::make('front.pages.contact.contact')
         ->with('contacts', $this->contact->where('active', 1)->get())
         ->with('contact', $contact)
         ->renderSections();        
 
         return response()->json([
-            'table' => $view['table'],
             'form' => $view['form'],
-            'id' => $contact->id,
+            
         ]);
     }
 
-    public function edit(contact $contact)
-    {
-        $view = View::make('front.pages.contacts.index')
-        ->with('contact', $contact)
-        ->with('contacts', $this->contact->where('active', 1)->get());   
-        
-        if(request()->ajax()) {
-
-            $sections = $view->renderSections(); 
-    
-            return response()->json([
-                'form' => $sections['form'],
-            ]); 
-        }
-                
-        return $view;
-    }
-
-    public function show(contact $contact){
-
-    }
-
-    public function destroy(contact $contact)
-    {
-        $contact->active = 0;
-        $contact->save();
-
-        $view = View::make('front.pages.contacts.index')
-            ->with('contact', $this->contact)
-            ->with('contacts', $this->contact->where('active', 1)->get())
-            ->renderSections();
-        
-        return response()->json([
-            'table' => $view['table'],
-            'form' => $view['form']
-        ]);
-    }
 }

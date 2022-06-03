@@ -34,6 +34,7 @@
                         <p>1 Registro</p>
                         <p>Mostrando la Pagina 1 de 1</p>
                     </div>
+                    <div>
                     <ul>
                         <li>Primera</li>
                         <li>Anterior</li>
@@ -48,7 +49,7 @@
 @endsection
 
 @section('form')
-    @if(isset($faq))
+    @if(isset($customer))
     <form class="admin-form" action="{{route("customers_store")}}">
 
         <input type="hidden" name="id">
@@ -81,23 +82,71 @@
                 </div>
             </div>
 
-            <div class="desktop-one-column">   
+            <div class="desktop-one-column">
                 <div class="form-group">
                     <div class="form-label">
-                        <label for="">Titulo</label>
+                        <label for="">Apellidos</label>
                     </div>
                     <div class="form-input">
-                        <input  type="text" name="title" value="{{isset($customer->title) ? $customer->title : ''}}">
+                        <input  type="text" name="name" value="{{isset($cus1tomer->mobile) ? $customer->mobile : ''}}">
                     </div>
                 </div>
+                <div class="desktop-one-column">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <label for="">Móvil</label>
+                        </div>
+                        <div class="form-input">
+                            <input  type="text" name="name" value="{{isset($customer->email) ? $customer->email : ''}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop-one-column">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <label for="">Ciudad</label>
+                        </div>
+                        <div class="form-input">
+                            <input  type="text" name="name" value="{{isset($customer->name) ? $customer->name : ''}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop-one-column">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <label for="">Provincia</label>
+                        </div>
+                        <div class="form-input">
+                            <input  type="text" name="name" value="{{isset($customer->name) ? $customer->name : ''}}">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="desktop-one-column">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <label for="">Código Postal</label>
+                        </div>
+                        <div class="form-input">
+                            <input  type="text" name="name" value="{{isset($customer->zipcode) ? $customer->zipcode : ''}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop-one-column">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <label for="">Dirección</label>
+                        </div>
+                        <div class="form-input">
+                            <input  type="text" name="name" value="{{isset($customer->address) ? $customer->address : ''}}">
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
             </div>
 
-            <div class="text-editor">
-                <div>
-                    <label for="">Descripción</label>
-                </div>
-                <textarea class="editor" name="description" id="ckeditor">{{isset($customer->description) ? $customer->description : ''}}</textarea>
-            </div>
         </div>
     </form>
     @endif

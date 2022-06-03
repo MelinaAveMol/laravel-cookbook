@@ -4,8 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProductCategory extends Model
+class Contact extends Model
 {
     protected $guarded = [];
     protected $table = "contacts";
+    // with
+    //table
+    //fillable
 }

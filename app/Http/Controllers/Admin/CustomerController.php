@@ -146,8 +146,6 @@ class CustomerController extends Controller
                 'province' => request('province'),
                 'zipcode' => request('zipcode'),
                 'address' => request('address'),
-                'description' => request('description'),
-                'visible' => 1,
                 'active' => 1,
         ]);
             

@@ -57,7 +57,7 @@ Route::group(['prefix' => 'admin'], function () {
     ]);
     Route::resource('customers', 'App\Http\Controllers\Admin\CustomerController', [
         'parameters' => [
-            'customers' => 'customer', 
+            'clientes' => 'customer', 
         ],
         'names' => [
             'index' => 'customers',
@@ -131,6 +131,12 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
+Route::get('/contactos', 'App\Http\Controllers\Front\ContactController@index')->name('front_contact');
+
+
+Route::post('/contactos', 'App\Http\Controllers\Front\ContactController@store')->name('front_contact_form');
+
+
 Route::get('/home', function () {
     return view('front.pages.home.desktop.home');
 });
@@ -148,9 +154,8 @@ Route::get('/user', function () {
 
 });
 
-Route::get('/contact', function () {
-    return view('front.pages.home.desktop.contacts');
-});
+
+
 
 
 

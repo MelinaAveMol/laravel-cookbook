@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="contact">
-        <div class="contact-title">
+        <div class="contact-surname">
             <h1>Contacte con nosotros</h1>
         </div>
         <div class="contact-frame">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="contact-form">
+                    <div class="front-form" data-url="route('front_contact_form')" >
                         <form>
                             <div class="desktop-two-columns">
                                 <div class="column">
@@ -47,7 +47,7 @@
                                             <label>Nombre</label>
                                         </div>
                                         <div class="form-element-input">
-                                            <input id="name" type='text' name="name" value=''>
+                                            <input  type="text" name="name" value="{">                                        
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                             <label>Apellidos</label>
                                         </div>
                                         <div class="form-element-input">
-                                            <input id="surname" type='text' name="surname" value=''>
+                                            <input  type="text" name="surname" value="">
                                         </div>
                                     </div>
                                 </div>   
@@ -69,7 +69,7 @@
                                             <label>Móvil</label>
                                         </div>
                                         <div class="form-element-input">
-                                            <input id="mobile" type='tel' name="mobile" value=''>
+                                            <input  type="text" name="mobile" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                                             <label>E-mail</label>
                                         </div>
                                         <div class="form-element-input">
-                                            <input id="email" type='email' name="email" value=''>
+                                            <input  type="text" name="email" value="">
                                         </div>
                                     </div>
                                 </div>   
@@ -91,16 +91,16 @@
                                             <label>E-mail</label>
                                         </div>
                                         <div class="form-element-input">
-                                            <textarea name="message"></textarea>
+                                            <textarea class="editor" name="message" ></textarea>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="desktop-one-column">
                                 <div class="column">
-                                    <div id="form-send-button">
-                                        <button id="hola">Enviar</button>
-                                        
+                                    <div id="form-send-button" action="{{route("contacts_store")}}">
+                                        <button>Enviar</button>
                                     </div>
                                 </div>
                             </div>
