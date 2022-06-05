@@ -39,8 +39,23 @@ Route::group(['prefix' => 'admin'], function () {
         -- En store guardaremos los datos que hayamos añadido en el formulario, nos servirá tanto para guardar datos nuevos como actualizarlos
     - destroy será una llamada de tipo DELETE
         -- En destroy lo que haremos es borrar un dato de la base de datos 
-    */
 
+    */
+    
+    Route::resource('faqs', 'App\Http\Controllers\Admin\FaqController', [
+        'parameters' => [
+            'business_informations' => 'info_comerciai', 
+        ],
+        'names' => [
+            'index' => 'business_informations' ,
+            'create' => 'business_informations_create',
+            'edit' => 'business_informations_edit',
+            'store' => 'business_informations_store',
+            'destroy' => 'business_informations_destroy',
+            'show' => 'business_informations_show',
+        ]
+
+    ]);
     Route::resource('faqs', 'App\Http\Controllers\Admin\FaqController', [
         'parameters' => [
             'faqs' => 'faq', 
@@ -128,6 +143,10 @@ Route::group(['prefix' => 'admin'], function () {
         ]
     ]);
 
+});
+
+Route::get('/info_comercial', function () {
+    return view('front.pages.home.desktop.business_informations');
 });
 
 

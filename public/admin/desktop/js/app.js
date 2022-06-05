@@ -796,6 +796,29 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./resources/sass/front/app.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/front/app.scss ***!
+  \***************************************/
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n   ╷\n39 │ @import \"components/desktop/_tabs\";\r\n   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n   ╵\n  resources\\sass\\front\\app.scss 39:9  root stylesheet\n    at processResult (C:\\git\\laravel-cookbook\\node_modules\\webpack\\lib\\NormalModule.js:758:19)\n    at C:\\git\\laravel-cookbook\\node_modules\\webpack\\lib\\NormalModule.js:860:5\n    at C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:400:11\n    at C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:252:18\n    at context.callback (C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at C:\\git\\laravel-cookbook\\node_modules\\sass-loader\\dist\\index.js:54:7\n    at Function.call$2 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:99516:16)\n    at render_closure1.call$2 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:84989:12)\n    at _RootZone.runBinary$3$3 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:29637:18)\n    at _FutureListener.handleError$1 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:28157:21)");
+
+/***/ }),
+
+/***/ "./resources/sass/front/app-mobile.scss":
+/*!**********************************************!*\
+  !*** ./resources/sass/front/app-mobile.scss ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -933,6 +956,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/admin/desktop/js/app": 0,
+/******/ 			"front/mobile/css/app-mobile": 0,
 /******/ 			"admin/mobile/css/app-mobile": 0,
 /******/ 			"admin/desktop/css/app": 0
 /******/ 		};
@@ -984,9 +1008,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/js/admin/desktop/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app-mobile.scss")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/js/admin/desktop/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app-mobile.scss")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/front/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["front/mobile/css/app-mobile","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/front/app-mobile.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
