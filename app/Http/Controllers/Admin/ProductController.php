@@ -31,9 +31,7 @@ class ProductController extends Controller
         
         ->with ('product', $this->product)
         ->with ('products', $this->product ->where('active' , 1)->get());
-
-
-        // Debugbar::info($view);
+        
 
         if(request()->ajax()) {
             
@@ -48,82 +46,9 @@ class ProductController extends Controller
         return $view;
     }
 
-    public function create()
-    {
-        $view = View::make('admin.pages.products.index')
-        ->with('product', $this->product)
-        ->renderSections();
 
-        //debugbar::info($view['form']);
-
-        return response()->json([
-            'form' => $view['form']
-        ]);
-
-    }
-
-    public function store(ProductRequest $request)
-    {
-        $product = $this->product->updateOrCreate([
-            'id' => request('id')],[
-            'name' => request('name'),
-            'title' => request('title'),
-            'price' => request('price'),
-            'description' => request('description'),
-            'category_id' => request('category_id'),
-            'features' => request('features'),
-            'visible' => 1,
-            'active' => 1,
-    ]);
-
-    $view = View::make('admin.pages.products.index')
-        ->with('products', $this->product->where('active', 1)->get())
-        ->with('product', $product)
-        ->renderSections();        
-
-        return response()->json([
-            'table' => $view['table'],
-            'form' => $view['form'],
-            'id' => $product->id,
-        ]);
-        
-    }
-
-    public function edit(Product $product)
-    {
-        $view = View::make('admin.pages.products.index')
-        ->with('product', $product)
-        ->with('products', $this->product->where('active', 1)->get());   
-        
-        if(request()->ajax()) {
-
-            $sections = $view->renderSections(); 
-    
-            return response()->json([
-                'form' => $sections['form'],
-            ]); 
-        }
-                
-        return $view;
-    }
     public function show(Product $product){
         
-    }
-
-    public function destroy(Product $product)
-    {
-        $product->active = 0;
-        $product->save();
-
-        $view = View::make('admin.pages.products.index')
-            ->with('product', $product)
-            ->with('products', $this->product->where('active', 1)->get())   
-            ->renderSections();
-        
-        return response()->json([
-            'table' => $view['table'],
-            'form' => $view['form']
-        ]); 
     }
 
 }

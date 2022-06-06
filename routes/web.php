@@ -145,33 +145,19 @@ Route::group(['prefix' => 'admin'], function () {
 
 });
 
-Route::get('/info_comercial', function () {
-    return view('front.pages.home.desktop.business_informations');
-});
+Route::get('/', 'App\Http\Controllers\Front\HomeController@index')->name('front_contact');
 
+Route::get('/faqs', 'App\Http\Controllers\Front\FaqController@index')->name('front_contact_form');
 
-Route::get('/contactos', 'App\Http\Controllers\Front\ContactController@index')->name('front_contact');
+Route::get('/contacto', 'App\Http\Controllers\Front\ContactController@index')->name('front_contact');
+Route::post('/contacto', 'App\Http\Controllers\Front\ContactController@store')->name('front_contact_form');
 
+Route::get('/productos', 'App\Http\Controllers\Front\ProductController@index')->name('front_product_form');
 
-Route::post('/contactos', 'App\Http\Controllers\Front\ContactController@store')->name('front_contact_form');
+Route::get('/caja', 'App\Http\Controllers\Front\CheckoutController@index')->name('front_checkout_form');
+Route::get('/carrito', 'App\Http\Controllers\Front\TrolleyController@index')->name('front_trolley_form');
 
-
-Route::get('/home', function () {
-    return view('front.pages.home.desktop.home');
-});
-
-
-Route::get('/products', function () {
-    return view('front.pages.home.desktop.products');
-});
-
-Route::get('/product_category', function () {
-    return view('front.pages.home.desktop.product_categories');
-});
-Route::get('/user', function () {
-    return view('front.pages.home.desktop.users');
-
-});
+Route::get('/productos', 'App\Http\Controllers\Front\ProductController@index')->name('front_products_form');
 
 
 
