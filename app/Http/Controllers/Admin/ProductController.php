@@ -49,6 +49,11 @@ class ProductController extends Controller
 
     public function show(Product $product){
         
+        $view = View::make('front.pages.product.index')
+        ->with('products', $this->product->where('active', 1)->where('visible', 1)->get());
+                
+      
+        
     }
 
 }

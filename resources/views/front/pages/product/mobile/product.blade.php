@@ -25,7 +25,7 @@
             </div>  
         </div>
         
-        <!-- <div class="column">
+        <div class="column">
             <div class="product-image">
                 <img src="images/productimage.jpg">
             </div>
@@ -56,26 +56,24 @@
             
                 <div class="product-info">
                     <div class="product-title">
-                        <h2>Curso de cocina vegetariana y energética</h2>
+                        <h2>{{$product->title}}</h2>
                     </div>
                     <div class="product-price">
-                        <span>250€</span>
+                        <span>{{$product->price}}</span>
                     </div>
                     <div class="product-details">
                         <p>
-                            El 11/5 volvemos con los talleres de cocina, teoría, práctica y cena.
-                        Sábado de 16,30 a 20 hs. Temática estival..todos cocinamos!!
-                        Consultas al 684143018.
-                        Te esperamos, anímate a cambiar hábitos !!!
-                        
+                            {{$product->description}}
                         </p>
                     </div>
                     <div class="tab-panel">
                         <div class="tab active" data-tab="content">
-                            Descripción
+                            {{$product->description}}
+
                         </div>
                         <div class="tab" data-tab="specifications">
-                            Características
+                            {{$product->features}}
+
                         </div>
                         <div class="tab" data-tab="opinions">
                             Opiniones

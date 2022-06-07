@@ -145,19 +145,21 @@ Route::group(['prefix' => 'admin'], function () {
 
 });
 
-Route::get('/', 'App\Http\Controllers\Front\HomeController@index')->name('front_contact');
+Route::get('/', 'App\Http\Controllers\Front\HomeController@index')->name('front_home');
 
-Route::get('/faqs', 'App\Http\Controllers\Front\FaqController@index')->name('front_contact_form');
+Route::get('/faqs', 'App\Http\Controllers\Front\FaqController@index')->name('front_faqs');
 
 Route::get('/contacto', 'App\Http\Controllers\Front\ContactController@index')->name('front_contact');
 Route::post('/contacto', 'App\Http\Controllers\Front\ContactController@store')->name('front_contact_form');
 
-Route::get('/productos', 'App\Http\Controllers\Front\ProductController@index')->name('front_product_form');
+Route::get('/productos', 'App\Http\Controllers\Front\ProductController@index')->name('front_products');
+Route::get('/productos/{product}', 'App\Http\Controllers\Front\ProductController@show')->name('front_product');
+// Route::get('/productos/{product}', 'App\Http\Controllers\Front\ProductController@show')->name('front_product');
 
-Route::get('/caja', 'App\Http\Controllers\Front\CheckoutController@index')->name('front_checkout_form');
-Route::get('/carrito', 'App\Http\Controllers\Front\TrolleyController@index')->name('front_trolley_form');
 
-Route::get('/productos', 'App\Http\Controllers\Front\ProductController@index')->name('front_products_form');
+Route::get('/caja', 'App\Http\Controllers\Front\CheckoutController@index')->name('front_checkout');
+Route::get('/carrito', 'App\Http\Controllers\Front\TrolleyController@index')->name('front_trolley');
+
 
 
 

@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -390,7 +390,6 @@ h5, h6 {
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li {
-  color: hsl(0deg, 0%, 0%);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -628,34 +627,6 @@ form .form-send-button button {
 form .form-send-button button:hover {
   background: #FF9A33;
   transition: 0.2s all;
-}
-
-.modal-container {
-  position: fixed;
-  z-index: -1;
-  width: 50%;
-  top: 30%;
-  left: 25%;
-  opacity: 0;
-  transition: 0.5s all;
-}
-.modal-container.modal-active {
-  z-index: 9999;
-  opacity: 1;
-}
-
-.textbox-content {
-  background-color: grey;
-}
-
-.textbox-text p {
-  text-align: center;
-}
-
-.textbox-buttons {
-  margin-top: 2em;
-  display: flex;
-  justify-content: space-around;
 }
 
 .filters {
@@ -1370,9 +1341,8 @@ form .form-send-button button:hover {
   background: white;
   border-top: hsl(0deg, 4%, 85%) 5px solid;
   border-bottom: hsl(0deg, 4%, 85%) 5px solid;
-  margin-top: 2rem;
 }
-.admin-panel .registers .registers-data label {
+.admin-panel .registers .registers-dates label {
   font-size: 0.8rem;
   color: black;
 }
@@ -1385,8 +1355,7 @@ form .form-send-button button:hover {
 }
 .admin-panel .register-data {
   position: absolute;
-  top: 90vh;
-  display: none;
+  top: 72vh;
 }
 .admin-panel .register-data div {
   display: flex;
@@ -1410,7 +1379,6 @@ form .form-send-button button:hover {
 }
 .admin-panel .panel #color-panel {
   background: hsl(0deg, 4%, 85%);
-  margin-top: 2rem;
 }
 .admin-panel .panel .gestion .contents button {
   border-style: none;
@@ -1532,14 +1500,14 @@ form .form-send-button button:hover {
 .admin-panel .panel .category {
   display: flex;
   justify-content: space-around;
-  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .admin-panel .panel .category .form-group {
   text-align: center;
 }
 .admin-panel .panel .category .form-group .form-label {
   padding: 0.5rem;
-  margin-left: 2rem;
 }
 .admin-panel .panel .category .form-group .form-label label {
   color: black;
@@ -1579,31 +1547,29 @@ form .form-send-button button:hover {
   margin: 1rem auto 1rem;
   text-align: center;
 }
+.admin-panel .panel .description .form-group {
+  padding: 0.5rem;
+}
 .admin-panel .panel .description .form-group .form-label label {
   color: black;
   font-weight: 600;
+}
+.admin-panel .panel .description .form-group .form-input {
+  padding: 0.5rem;
 }
 .admin-panel .panel .description .form-group .form-input input {
   text-align: center;
   border-style: none;
   border-bottom: 2px hsl(0deg, 4%, 85%) solid;
   width: 100%;
-  padding-left: 2rem;
 }
 .admin-panel .panel .text-editor {
-  padding-left: 2rem;
-  margin-right: 5em;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 5rem;
 }
 .admin-panel .panel .text-editor textarea {
   width: 100%;
-}
-.admin-panel .panel .form-group textarea {
-  width: 91%;
-  margin: auto;
-}
-
-.form-group {
-  padding-left: 2rem;
 }
 
 .faqs {

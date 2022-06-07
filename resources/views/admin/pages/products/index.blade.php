@@ -73,15 +73,13 @@
             <div class="desktop-one-column">
                 <div class="form-group">
                     <div class="form-label">
-                        <label for="">Nombre</label>
+                        <label for="">Producto</label>
                     </div>
-                    <div class="form-select">
+                    <div class="form-input">
 
-                        <select name="categoria_id" {{isset($product->category) ? $product->category : ''}}>
-                            <option value="name" selected>categoria</option>
-                            <option value="title" >categoria</option>
-                            <option value="value3">categoria</option>
-                          </select> 
+                        {{-- <select name="categoria_id" {{isset($product->category) ? $product->category : ''}}> --}}
+                    <input  type="text" name="price" value="{{isset($product->price) ? $product->title : ''}}"> 
+
                         {{-- <input  type="text" name="name" value="{{isset($product->name) ? $product->name : ''}}"> --}}
                     </div>
                 </div>
@@ -90,10 +88,11 @@
             <div class="desktop-one-column">   
                     <div class="form-group">
                     <div class="form-label">
-                        <label for="">Título</label>
+                        <label for="">Categoria</label>
                     </div>
-                    <div class="form-select"> 
-                        <select name="category_id">
+                    <div class="form-input"> 
+                        <input  type="text" name="" value="{{isset($product->product_category) ? $product->category : ''}}"> 
+
                             <option></option>
                         </select> 
                     </div>
@@ -104,7 +103,7 @@
                     <label for="">Precio</label>
                 </div>
                 <div class="form-select">
-                    <input  type="number" name="price" value="{{isset($product->price) ? $product->title : ''}}"> 
+                    <input  type="number" name="price" value="{{isset($product->price) ? $product->price : ''}}"> 
                 </div>
             </div>
 
