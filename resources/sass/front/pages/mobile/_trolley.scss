@@ -1,39 +1,33 @@
 .cart {
-    padding: 2rem 5%;
+    background: #FF6347;
   }
   .cart .cart-title {
     text-align: center;
-    margin: 2rem;
   }
   .cart .cart-title h2 {
-    font-size: 700;
-    font-size: 3rem;
+    padding: 2rem;
   }
   .cart .resume table {
     display: flex;
     justify-content: space-between;
-  }
-  .cart .resume table tbody {
-    width: 100%;
+    margin-bottom: 1rem;
   }
   .cart .resume table tr {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     margin-right: 1rem;
     text-align: center;
   }
   .cart .resume table tr td {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .cart .resume table tr td input {
     width: 10%;
   }
   .cart .resume table tr .amount {
     display: flex;
-    width: 35%;
-    margin-top: 0.5rem;
-    margin-left: 7rem;
+    width: 100%;
   }
   .cart .resume table tr .amount .less button {
     border: 1px solid #c4402f;
@@ -76,15 +70,15 @@
     padding: 1rem;
   }
   .cart .resume table tr img {
-    max-width: 25%;
+    max-width: 100%;
   }
   .cart .resume table tr:first-child {
     border-bottom: 0.6rem solid white;
     width: max-content;
   }
   .cart .payment {
-    width: 37.5%;
-    margin-left: auto;
+    width: 90%;
+    margin: auto;
     text-align: center;
   }
   .cart .payment table {
@@ -101,7 +95,7 @@
     font-size: 1.15rem;
   }
   .cart .payment table tr td {
-    padding: 1rem;
+    padding: 0.8rem;
     font-weight: 600;
     font-size: 1.15rem;
   }
@@ -109,15 +103,19 @@
     border-top: 1px solid white;
   }
   .cart .payment .payment-buttons {
-    margin: 2rem auto;
     width: 75%;
     display: flex;
+    margin-top: 1rem;
+    margin: auto;
+    padding-bottom: 2rem;
   }
   .cart .payment .payment-buttons .back {
     padding-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .cart .payment .payment-buttons .back button {
-    background: hsl(226deg, 63%, 45%);
+    background: rgb(89, 171, 227);
     border-radius: 0.5rem;
     border: white 3px solid;
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -132,8 +130,11 @@
     background: #FF9A33;
     transition: 0.2s all;
   }
+  .cart .payment .payment-buttons .buy {
+    margin-top: 1rem;
+  }
   .cart .payment .payment-buttons .buy button {
-    background: hsl(226deg, 63%, 45%);
+    background: rgb(89, 171, 227);
     border-radius: 0.5rem;
     border: white 3px solid;
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);

@@ -1,177 +1,31 @@
-//HEADER*//
-
-.contact{
-
-  .contact-title{
-
-      background-color: rgb(226, 119, 119);
-      padding-top:  2em;
-
-      h1{
-          text-align: center;
-          color:#f7eef5;
-          font-family: 'square peg';
-      }
+.contact {
+    background: rgb(89, 171, 227);
   }
-
-  .contact-frame{
-
-      background-color: rgb(226, 119, 119);
-      min-height: 70vh;
-      padding: 5rem 20%;
-      width: 60%;
-      
-      .company-data{
-          font-size: 1.5em;
-      }
-  
-      .company-data ul li{
-          color: rgb(247, 242, 242);
-          margin-bottom: 1.5em;
-          font-family: 'square peg';
-          font-size:1.1em;
-          font-style:bold;
-
-          svg{
-              margin-right: 1rem;
-          }
-      }
-    
-      .contact-form{
-
-          .form-element{
-
-              margin-bottom: 1rem;
-
-              .form-element-label{
-
-                  margin-bottom: 0.5rem;
-                  
-                  label{
-                      color: hsl(0, 0%, 100%);
-                  }
-              }
-
-              .form-element-input{
-
-                  input{
-                      padding: 0.3rem 5%;
-                      width: 90%;
-                  }
-
-                  textarea{
-                      height: 15vh;
-                      padding: 0.3rem 2%;
-                      width: 96%;
-                  }
-              }
-          }
-
-          .form-send-button{
-
-              margin-left: auto;
-
-              button{
-                  background-color: rgb(245, 155, 155);
-                  color:rgb(241, 235, 235);
-                  cursor: pointer;
-                  border: none;
-                  border-radius: 0.5rem;
-                  box-shadow: 0.1rem 0.1rem 0.7rem 0.2rem #000000;
-                  padding: 0.3rem 2rem;
-              }
-          }
-      }
-      
-  
-      .user-form-up{
-          padding: 45px 45px 20px;
-          text-align:left;
-          color: #edf2f3;
-          margin-top: 50px;
-          display:block;
-          
-     
-      }
-      .user-form-up .item{
-          margin-bottom:2em;
-  
-         
-      }
-      
-      .user-form-up {
-          margin-top:2em;
-          padding-left:0.5em;
-  
-      }
-      .user-form-middle{
-          color: #edf2f3;
-          padding:45px 0.2px;
-          margin-top: 30px;
-          margin-right: 6em;
-          text-align:left;
-          display:block;
-      }
-      .user-form-middle .item{
-          margin-bottom:2em; 
-      }
-      .user-form-up .item label{
-           padding: 0.1em -1em 1em;
-           margin-top: 3em;
-  
-      }
-      .user-form-middle .item label{
-          padding: 0.1em -1em 0.2em;
-  
-      }
-      .user-form-up .item input{
-          margin-top:1em;
-  // 
-      }
-      .user-form-middle .item input{
-          margin-top:1em;
-  
-      }
-      .user-form-down{
-      text-align:left;
-      color: #edf2f3;
-      position:relative;
-      display:block;
-      margin-bottom: 10em;
-      
-  
-  
-      }
-      .user-form-down .form-message{
-          padding: 0.1px 45px 10px;
-          text-align:left;
-          color: #edf2f3;
-          font-family: "Akshar", sans-serif;
-          display:block;
-          margin-bottom: 0.2em;
-          
-      }
-      .user-form-down textarea{
-          
-          width:48%;
-          height: 50%;
-          color: #edf2f3;
-          margin-top:2;
-          margin-left:3em;
-          padding-right: 12em;
-          color:rgb(44, 41, 41);
-          padding-bottom:1em;
-          
-      
-      }
-      .send-button input{
-      
-  
-  
-      }
-  
-      
-      
+  .contact .contact-title {
+    margin: 1rem auto 1rem auto;
+    text-align: center;
   }
-}
-
+  .contact .contact-title h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+  }
+  .contact .contact-options {
+    width: 90%;
+    margin: auto;
+    background: #2a70d5;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  .contact .contact-options .contact-option {
+    margin-bottom: 1rem;
+  }
+  .contact .contact-options .contact-option h3 {
+    font-size: 1.3rem;
+  }
+  .contact .contact-options .contact-option h3 svg {
+    width: 7%;
+  }

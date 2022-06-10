@@ -1,0 +1,44 @@
+.mobile-five-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-five-columns > .column {
+    width: 18%;
+  }
+  
+  .mobile-four-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-four-columns > .column {
+    width: 22%;
+  }
+  
+  .mobile-three-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-three-columns > .column {
+    width: 30%;
+  }
+  
+  .mobile-two-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-two-columns > .column {
+    width: 48%;
+  }
+  
+  .mobile-one-column {
+    width: 100%;
+    display: block;
+  }
+  .mobile-one-column > .column {
+    width: 100%;
+  }
+  

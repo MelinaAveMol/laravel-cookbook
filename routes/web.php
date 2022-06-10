@@ -41,8 +41,21 @@ Route::group(['prefix' => 'admin'], function () {
         -- En destroy lo que haremos es borrar un dato de la base de datos 
 
     */
-    
     Route::resource('faqs', 'App\Http\Controllers\Admin\FaqController', [
+        'parameters' => [
+            'business_informations' => 'info_comerciai', 
+        ],
+        'names' => [
+            'index' => 'business_informations' ,
+            'create' => 'business_informations_create',
+            'edit' => 'business_informations_edit',
+            'store' => 'business_informations_store',
+            'destroy' => 'business_informations_destroy',
+            'show' => 'business_informations_show',
+        ]
+
+    ]);
+    Route::resource('business_informations', 'App\Http\Controllers\Admin\FaqController', [
         'parameters' => [
             'business_informations' => 'info_comerciai', 
         ],
@@ -154,7 +167,8 @@ Route::post('/contacto', 'App\Http\Controllers\Front\ContactController@store')->
 
 Route::get('/productos', 'App\Http\Controllers\Front\ProductController@index')->name('front_products');
 Route::get('/productos/{product}', 'App\Http\Controllers\Front\ProductController@show')->name('front_product');
-// Route::get('/productos/{product}', 'App\Http\Controllers\Front\ProductController@show')->name('front_product');
+// Route::get('/categorias/{product_category}/', 'App\Http\Controllers\Front\ProductCategoryController@show')->name('front_product_category');
+
 
 
 Route::get('/caja', 'App\Http\Controllers\Front\CheckoutController@index')->name('front_checkout');

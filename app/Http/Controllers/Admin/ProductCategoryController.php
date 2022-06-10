@@ -22,7 +22,7 @@ class ProductCategoryController extends Controller
     public function __construct(ProductCategory $product_category)
     {
 
-        // $this->middleware('auth');
+        
         $this->product_category = $product_category;
         $this->product_category->visible = 1;
         // Debugbar::info($this->productCategory);
@@ -92,41 +92,7 @@ class ProductCategoryController extends Controller
         ]);
     }
 
-    public function edit(ProductCategory $product_category)
-    {
-        $view = View::make('admin.pages.product_categories.index')
-        ->with('product_category', $product_category)
-        ->with('product_categories', $this->product_category->where('active', 1)->get());   
-        
-        if(request()->ajax()) {
+   
 
-            $sections = $view->renderSections(); 
     
-            return response()->json([
-                'form' => $sections['form'],
-            ]); 
-        }
-                
-        return $view;
-    }
-
-    public function show(ProductCategory $product_category){
-
-    }
-
-    public function destroy(ProductCategory $product_category)
-    {
-        $product_category->active = 0;
-        $product_category->save();
-
-        $view = View::make('admin.pages.product_categories.index')
-            ->with('product_category', $this->product_category)
-            ->with('product_categories', $this->product_category->where('active', 1)->get())
-            ->renderSections();
-        
-        return response()->json([
-            'table' => $view['table'],
-            'form' => $view['form']
-        ]);
-    }
 }

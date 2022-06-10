@@ -16,6 +16,7 @@ class UserController extends Controller
 
 
     public function __construct(User $user)
+    {
         // Debugbar::info($this->user); //la propiedad faqcontroller todavia no tiene ningún valor
         // Debugbar::info($user); // ahora uso el codigo del objeto faqcontroller quiero el objeto modelo faq           
 

@@ -11,4 +11,5 @@ class Products extends Model
     // with
     //table
     //fillable
+    
 }

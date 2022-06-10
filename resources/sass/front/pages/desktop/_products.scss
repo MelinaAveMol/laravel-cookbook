@@ -1,130 +1,115 @@
-
-
-.header-main{
-
-}
-    .header-main-title{
-
-    }
-        .header-main-menu{
-
-        }
-            .header-main-menu-elements ul li{
-                cursor: pointer;
-            }
-.main-category{
-    padding-left: 15%;
-}
-
-.products-gallery .up img{
-margin-bottom: 1.5em;
-margin-left: 1.2em;
-width:20em;
-
-}
-.products-gallery .down img{
-    margin-bottom: 1.5em;
-margin-left: 1.2em;
-width:20em;
-
-}
-.products-options{
-    padding: 5%;
-
-}
-.products-options-counter{
-    width: max-content;
-    margin-right:auto;
-    margin-bottom:4em;
-}
-
-
-.products-options-counter h4{
-    
-}
-    
-
-.products-options-filter{
-    
-}
-
-    .main-category-elements{
-
-    }
-        .products-options{
-            margin-bottom: 0.2rem;
-            
-            height: 0.1em;
-        }
-            .products-options-counter{
-
-            }
-            .products-options-filter{
-                width: max-content;
-                margin-left: auto;
-            }
-                .selectors{
-                    
-                   
-                }
-                
-                .products-gallery .product  {
-                margin-right: 4em;
-                margin-top:0.2em;
-                
-                
-                
-                    
-                }
-               
-            .products-gallery .product  h3{
-                text-align: center;
-                margin-bottom:1em;
-               
-
-                
-                
-            }
-            
-            .products-gallery .product .pick{
-                
-                margin-top:0.2em;
-                width:10em;
-                
-                
-          
-            }
-            .products-gallery .product .pick button{
-                
-                    background-color: rgb(228, 42, 42);
-                    color:rgb(241, 235, 235);
-                    cursor: pointer;
-                    border-radius: 0.5rem;
-                    box-shadow: 0.1rem 0.1rem 0.7rem 0.2rem #000000;
-                    padding: 0.3rem 2rem;
-                    width:13.5em;
-                    margin-left: 1em;
-                    margin-bottom: 2em;
-                    
-                    
-
-            }
-            .products-gallery .product .pick h3{
-                
-                margin-top: 0.5em;
-
-            }
-  
-
-  
-
-            
-        
-
-
-
-
-
-
-
-
+.shop {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #63B47A;
+  }
+  .shop .shop-categories {
+    width: 35%;
+    margin: auto;
+    padding-top: 3.4rem;
+  }
+  .shop .shop-categories .shop-categories-title {
+    margin-bottom: 1rem;
+  }
+  .shop .shop-categories .shop-categories-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+  }
+  .shop .shop-categories .shop-categories-element {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+  }
+  .shop .shop-articles {
+    width: 85%;
+    margin: auto;
+    padding: 4rem;
+    border-left: 0.3rem white solid;
+  }
+  .shop .shop-articles .shop-articles-information {
+    margin-bottom: 2.5rem;
+  }
+  .shop .shop-articles .shop-articles-information .shop-articles-information-counter {
+    text-align: start;
+  }
+  .shop .shop-articles .shop-articles-information .shop-articles-information-counter p {
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .shop .shop-articles .shop-articles-information .shop-articles-information-select {
+    width: 10%;
+    margin: auto;
+    text-align: left;
+  }
+  .shop .shop-articles .shop-articles-information .shop-articles-information-select select {
+    cursor: pointer;
+    background: #2A70D5;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 0.7rem 4rem 0.7rem 4rem;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  .shop .shop-articles .shop-articles-information .shop-articles-information-select select:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .shop .shop-articles .shop-articles-information .shop-articles-information-select select option {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    color: #909dc2;
+    cursor: pointer;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content {
+    text-align: center;
+    margin-top: 2rem;
+    transition: all 0.4s;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.1);
+    border: white 3px solid;
+    padding: 0.1rem;
+    background: white;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content:hover {
+    transform: translateY(-25px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-image img {
+    height: 16rem;
+    border-radius: 0.5rem;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-price {
+    position: relative;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-price span {
+    position: absolute;
+    font-weight: 700;
+    transform: translate(-50%, 0);
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-title {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-title h3 {
+    color: black;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-button {
+    margin-bottom: 1.5rem;
+  }
+  .shop .shop-articles .shop-articles-sections-cards .shop-articles-sections-cards-content .shop-articles-sections-cards-content-button button {
+    position: relative;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 0;
+    background: #f26964;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 0px #c1524e;
+  }

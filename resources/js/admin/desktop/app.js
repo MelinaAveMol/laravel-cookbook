@@ -2,7 +2,6 @@ import {renderTabs} from './tabs.js';
 import {renderPlusMinusButton} from './plus-minus-button.js';
 import {renderForm} from './form.js';
 import {renderTable} from './table.js';
-import {renderProduct} from './product.js';
 import {renderNotifications} from './notifications.js';
 import {renderCkeditor} from "./ckeditor.js";
 import {renderDelete} from "./delete";
@@ -19,7 +18,7 @@ renderDelete();
 renderEdit();
 renderCkeditor();
 renderNotifications();
-renderProduct();
+
 renderTabs();
 renderPlusMinusButton();
 renderForm();

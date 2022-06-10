@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Faq extends Model
+class Checkout extends Model
 {
     protected $guarded = [];
-    protected $table = "faqs";
+    protected $table = "sales";
 }

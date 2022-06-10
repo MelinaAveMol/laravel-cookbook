@@ -1,25 +1,43 @@
 <header>
     @if($agent->isDesktop())
-        <div class="column">    
-            <nav class="header-main-menu">
-                <div class="desktop-four-columns">
-                    <div class="header-main-menu-element">
-                        Propuestas
+    <div class="header-main">
+        <div class="desktop-two-columns"> 
+            <div class="column">
+                <div class="header-main-logo">
+                    <div class="header-hamburguer mobile-only ">
+                        <div class="hamburger " id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!-- <ul id="hamburger-menu mobile-only">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>home</li>
+                          </ul> -->
+                        
                     </div>
-                    <div class="header-main-menu-element">
-                        Inicia sesión
-                    </div>
-                    <div class="header-main-menu-element">
-                        Registrate
-                    </div>
-                    <div class="header-main-menu-element">
-                        <form>
-                            <input type="text" placeholder="Busca tu receta">
-                        </form>
-                    </div>
+                    <div class="header-main-logo-title">
+                        <h1>Cookin'soul</h1>    
+                    </div>        
                 </div>
-            </nav>        
-        </div> 
+            </div>    
+            <div class="column desktop-only">
+                <div class="header-main-menu ">
+                    <div class="header-main-menu-element ">
+                        <button>RECETAS</button>
+                    </div>
+                    <div class="header-main-menu-element">
+                        <button>CURSOS</button>
+                    </div>
+                    <div class="header-main-menu-element-active">
+                        <button>CONTÁCTANOS</button>
+                    </div>   
+                </div>
+            </div>   
+        </div>
+    </div>
     @endif
 
     @if($agent->isMobile())

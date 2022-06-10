@@ -15,13 +15,13 @@
 @import "layout/mobile/columns";
 
 // Pages
-@import "pagesmobile/home";
-@import "pages/mobile/contact";
-@import "pages/mobile/checkout";
-@import "pages/mobile/trolley";
-@import "pages/mobile/product";
-@import "pages/mobile/products";
-@import "pages/mobile/faqs";
+@import "pages/mobile/_home";
+@import "pages/mobile/_contact";
+@import "pages/mobile/_checkout";
+@import "pages/mobile/_trolley";
+@import "pages/mobile/_product";
+@import "pages/mobile/_products";
+@import "pages/mobile/_faqs";
 
 // Components
 @import "components/mobile/tabs";

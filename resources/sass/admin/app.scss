@@ -1,24 +1,40 @@
+
 @charset "utf-8";
 
 @import "helpers/variables";
 @import "helpers/mixins";
+
+//Base
+
 @import "base/normalize";
 @import "base/contents";
 @import "base/typography";
+
+// Layout
 @import "layout/desktop/master";
 @import "layout/desktop/header";
 @import "layout/desktop/footer";
 @import "layout/desktop/columns";
-@import "components/desktop/form";
-@import "components/desktop/modal-delete";
-@import "components/desktop/filters";
-@import "components/desktop/notification";
-@import "pages/home/desktop/home";
-@import "pages/home/desktop/products";
-@import "pages/home/desktop/contact";
-@import "pages/home/desktop/product";
-@import "pages/home/desktop/shoppingcart";
-@import "pages/home/desktop/check";
-@import "pages/home/desktop/panel";
-@import "pages/home/desktop/faqs";
+
+// Pages
+@import "pages/desktop/_home";
+@import "pages/desktop/_contact";
+@import "pages/desktop/_checkout";
+@import "pages/desktop/_trolley";
+@import "pages/desktop/_product";
+@import "pages/desktop/_products";
+@import "pages/desktop/_faqs";
+
+// Components
+@import "components/desktop/tabs";
+@import "components/desktop/hamburger";
+@import "components/desktop/plusMinusButton";
+// @import "components/desktop/pickedTabs";
+@import "components/desktop/accordion";
+
+// @import "components/mobile/categories";
+
+
+
+
 

@@ -23,6 +23,7 @@ class ProductController extends Controller
 
         $view = View::make('front.pages.products.index')
         ->with('products', $this->product->where('active', 1)->where('visible',1)->get());
+        
                 
         if(request()->ajax()) {
             
@@ -54,7 +55,7 @@ class ProductController extends Controller
             ]); 
         }
 
-
+        return $view;
     }
 
 }

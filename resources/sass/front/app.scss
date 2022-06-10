@@ -1,17 +1,6 @@
 
 @charset "utf-8";
 
-@import "components/desktop/tabs";
-@import "pages/home/desktop/home";
-@import "pages/desktop/products";
-@import "pages/desktop/product";
-@import "pages/desktop/contact";
-@import "pages/desktop/trolley";
-@import "pages/desktop/checkout";
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Just+Another+Hand&family=Roboto:wght@100&family=Square+Peg&display=swap');
-
-
 @import "helpers/variables";
 @import "helpers/mixins";
 
@@ -28,13 +17,13 @@
 @import "layout/desktop/columns";
 
 // Pages
-@import "pages/desktop/home";
-@import "pages/desktop/contact";
-@import "pages/desktop/checkout";
-@import "pages/desktop/trolley";
-@import "pages/desktop/product";
-@import "pages/desktop/products";
-@import "pages/desktop/faqs";
+@import "pages/desktop/_home";
+@import "pages/desktop/_contact";
+@import "pages/desktop/_checkout";
+@import "pages/desktop/_trolley";
+@import "pages/desktop/_product";
+@import "pages/desktop/_products";
+@import "pages/desktop/_faqs";
 
 // Components
 @import "components/desktop/tabs";

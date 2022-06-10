@@ -77,23 +77,22 @@
                     </div>
                     <div class="form-input">
 
-                        {{-- <select name="categoria_id" {{isset($product->category) ? $product->category : ''}}> --}}
-                    <input  type="text" name="price" value="{{isset($product->price) ? $product->title : ''}}"> 
+                        <div>
+                            <input  type="text" name="price" value=" "> 
+                        </div>
 
-                        {{-- <input  type="text" name="name" value="{{isset($product->name) ? $product->name : ''}}"> --}}
                     </div>
                 </div>
             </div>
 
             <div class="desktop-one-column">   
                     <div class="form-group">
-                    <div class="form-label">
-                        <label for="">Categoria</label>
-                    </div>
+                        <div class="form-label">
+                            <label for="">Categoria</label>
+                        </div>
                     <div class="form-input"> 
-                        <input  type="text" name="" value="{{isset($product->product_category) ? $product->category : ''}}"> 
-
-                            <option></option>
+                        <input  type="text" name="category" value=""> {{isset($product->product_category) ? $product->category : ''}}
+                        
                         </select> 
                     </div>
                 </div>
@@ -111,7 +110,7 @@
                 <div>
                     <label for="">Descripción</label>
                 </div>
-                <textarea class="editor" name="description" id="ckeditor">{{isset($product->description) ? $product->description : ''}}</textarea>
+                <textarea class="editor" name="description">{{isset($product->description) ? $product->description : ''}}</textarea>
             </div>
             <div class="form-group">
                 

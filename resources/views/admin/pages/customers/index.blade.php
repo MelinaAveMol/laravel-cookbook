@@ -77,7 +77,7 @@
                         <label for="">Nombre</label>
                     </div>
                     <div class="form-input">
-                        <input  type="text" name="name" value="{{isset($customer->name) ? $customer->name : ''}}">
+                        <input  type="text"  value="{{isset($customer->name) ? $customer->name : ''}}">
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                         <label for="">Apellidos</label>
                     </div>
                     <div class="form-input">
-                        <input  type="text" name="name" value="{{isset($cus1tomer->mobile) ? $customer->mobile : ''}}">
+                        <input  type="text"  value="{{isset($customer->surname) ? $customer->surname : ''}}">
                     </div>
                 </div>
                 <div class="desktop-one-column">
@@ -97,7 +97,7 @@
                             <label for="">Móvil</label>
                         </div>
                         <div class="form-input">
-                            <input  type="text" name="name" value="{{isset($customer->email) ? $customer->email : ''}}">
+                            <input  type="text"  value="{{isset($customer->mobile) ? $customer->mobile : ''}}">
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                             <label for="">Ciudad</label>
                         </div>
                         <div class="form-input">
-                            <input  type="text" name="name" value="{{isset($customer->name) ? $customer->name : ''}}">
+                            <input  type="text"  value="{{isset($customer->name) ? $customer->city : ''}}">
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                             <label for="">Provincia</label>
                         </div>
                         <div class="form-input">
-                            <input  type="text" name="name" value="{{isset($customer->name) ? $customer->name : ''}}">
+                            <input  type="text"  value="{{isset($customer->province) ? $customer->province : ''}}">
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                             <label for="">Código Postal</label>
                         </div>
                         <div class="form-input">
-                            <input  type="text" name="name" value="{{isset($customer->zipcode) ? $customer->zipcode : ''}}">
+                            <input  type="text"  value="{{isset($customer->zipcode) ? $customer->zipcode : ''}}">
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                             <label for="">Dirección</label>
                         </div>
                         <div class="form-input">
-                            <input  type="text" name="name" value="{{isset($customer->address) ? $customer->address : ''}}">
+                            <input  type="text"  value="{{isset($customer->address) ? $customer->address : ''}}">
                         </div>
                     </div>
                 </div>

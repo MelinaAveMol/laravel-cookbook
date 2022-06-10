@@ -1,0 +1,50 @@
+header {
+    background: white;
+  }
+  header .header-main {
+    background: white;
+    padding: 1%;
+    width: 90%;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  header .header-main .header-main-logo {
+    display: flex;
+    justify-content: start;
+    width: 70%;
+    margin-left: auto;
+    margin-top: 1.3rem;
+  }
+  header .header-main .header-main-logo .header-main-logo-title h1 svg {
+    width: 2.3rem;
+  }
+  header .header-main .header-main-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header-main .header-main-menu .header-main-menu-element button {
+    background: rgb(233, 95, 95);
+    margin-left: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+  }
+  header .header-main .header-main-menu .header-main-menu-element-active button {
+    background: rgb(233, 95, 95);
+    border-radius: 0.7rem;
+    border: 1px solid black;
+    color: white;
+    transition: 0.2s all;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+  }
+  header .header-main .header-main-menu .header-main-menu-element-active button:hover {
+    background: red;
+  }
+  

@@ -58,15 +58,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _plus_minus_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plus-minus-button.js */ "./resources/js/admin/desktop/plus-minus-button.js");
 /* harmony import */ var _form_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form.js */ "./resources/js/admin/desktop/form.js");
 /* harmony import */ var _table_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./table.js */ "./resources/js/admin/desktop/table.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './product.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _notifications_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./notifications.js */ "./resources/js/admin/desktop/notifications.js");
-/* harmony import */ var _ckeditor_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ckeditor.js */ "./resources/js/admin/desktop/ckeditor.js");
-/* harmony import */ var _delete__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./delete */ "./resources/js/admin/desktop/delete.js");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./edit */ "./resources/js/admin/desktop/edit.js");
-/* harmony import */ var _clean_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./clean.js */ "./resources/js/admin/desktop/clean.js");
-/* harmony import */ var _accordion_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./accordion.js */ "./resources/js/admin/desktop/accordion.js");
-/* harmony import */ var _filters_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./filters.js */ "./resources/js/admin/desktop/filters.js");
-/* harmony import */ var _modalDelete_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modalDelete.js */ "./resources/js/admin/desktop/modalDelete.js");
+/* harmony import */ var _notifications_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./notifications.js */ "./resources/js/admin/desktop/notifications.js");
+/* harmony import */ var _ckeditor_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ckeditor.js */ "./resources/js/admin/desktop/ckeditor.js");
+/* harmony import */ var _delete__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./delete */ "./resources/js/admin/desktop/delete.js");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./edit */ "./resources/js/admin/desktop/edit.js");
+/* harmony import */ var _clean_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./clean.js */ "./resources/js/admin/desktop/clean.js");
+/* harmony import */ var _accordion_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./accordion.js */ "./resources/js/admin/desktop/accordion.js");
+/* harmony import */ var _filters_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./filters.js */ "./resources/js/admin/desktop/filters.js");
+/* harmony import */ var _modalDelete_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modalDelete.js */ "./resources/js/admin/desktop/modalDelete.js");
 
 
 
@@ -79,20 +78,18 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 
 
 
-
-(0,_filters_js__WEBPACK_IMPORTED_MODULE_11__.renderFilters)();
-(0,_accordion_js__WEBPACK_IMPORTED_MODULE_10__.renderAccordion)();
-(0,_clean_js__WEBPACK_IMPORTED_MODULE_9__.renderClean)();
-(0,_delete__WEBPACK_IMPORTED_MODULE_7__.renderDelete)();
-(0,_edit__WEBPACK_IMPORTED_MODULE_8__.renderEdit)();
-(0,_ckeditor_js__WEBPACK_IMPORTED_MODULE_6__.renderCkeditor)();
-(0,_notifications_js__WEBPACK_IMPORTED_MODULE_5__.renderNotifications)();
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './product.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
+(0,_filters_js__WEBPACK_IMPORTED_MODULE_10__.renderFilters)();
+(0,_accordion_js__WEBPACK_IMPORTED_MODULE_9__.renderAccordion)();
+(0,_clean_js__WEBPACK_IMPORTED_MODULE_8__.renderClean)();
+(0,_delete__WEBPACK_IMPORTED_MODULE_6__.renderDelete)();
+(0,_edit__WEBPACK_IMPORTED_MODULE_7__.renderEdit)();
+(0,_ckeditor_js__WEBPACK_IMPORTED_MODULE_5__.renderCkeditor)();
+(0,_notifications_js__WEBPACK_IMPORTED_MODULE_4__.renderNotifications)();
 (0,_tabs_js__WEBPACK_IMPORTED_MODULE_0__.renderTabs)();
 (0,_plus_minus_button_js__WEBPACK_IMPORTED_MODULE_1__.renderPlusMinusButton)();
 (0,_form_js__WEBPACK_IMPORTED_MODULE_2__.renderForm)();
 (0,_table_js__WEBPACK_IMPORTED_MODULE_3__.renderTable)();
-(0,_modalDelete_js__WEBPACK_IMPORTED_MODULE_12__.renderModalDelete)();
+(0,_modalDelete_js__WEBPACK_IMPORTED_MODULE_11__.renderModalDelete)();
 
 /***/ }),
 
@@ -774,9 +771,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./resources/sass/front/app.scss ***!
   \***************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n  ╷\n5 │ @import \"pages/home/desktop/home\";\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  resources\\sass\\front\\app.scss 5:9  root stylesheet\n    at processResult (C:\\git\\laravel-cookbook\\node_modules\\webpack\\lib\\NormalModule.js:758:19)\n    at C:\\git\\laravel-cookbook\\node_modules\\webpack\\lib\\NormalModule.js:860:5\n    at C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:400:11\n    at C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:252:18\n    at context.callback (C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at C:\\git\\laravel-cookbook\\node_modules\\sass-loader\\dist\\index.js:54:7\n    at Function.call$2 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:99516:16)\n    at render_closure1.call$2 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:84989:12)\n    at _RootZone.runBinary$3$3 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:29637:18)\n    at _FutureListener.handleError$1 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:28157:21)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -784,9 +784,12 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /*!**********************************************!*\
   !*** ./resources/sass/front/app-mobile.scss ***!
   \**********************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n   ╷\n12 │ @import \"layout/mobile/master\";\n   │         ^^^^^^^^^^^^^^^^^^^^^^\n   ╵\n  resources\\sass\\front\\app-mobile.scss 12:9  root stylesheet\n    at processResult (C:\\git\\laravel-cookbook\\node_modules\\webpack\\lib\\NormalModule.js:758:19)\n    at C:\\git\\laravel-cookbook\\node_modules\\webpack\\lib\\NormalModule.js:860:5\n    at C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:400:11\n    at C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:252:18\n    at context.callback (C:\\git\\laravel-cookbook\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at C:\\git\\laravel-cookbook\\node_modules\\sass-loader\\dist\\index.js:54:7\n    at Function.call$2 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:99516:16)\n    at render_closure1.call$2 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:84989:12)\n    at _RootZone.runBinary$3$3 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:29637:18)\n    at _FutureListener.handleError$1 (C:\\git\\laravel-cookbook\\node_modules\\sass\\sass.dart.js:28157:21)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -925,6 +928,8 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/admin/desktop/js/app": 0,
+/******/ 			"front/mobile/css/app-mobile": 0,
+/******/ 			"front/desktop/css/app": 0,
 /******/ 			"admin/mobile/css/app-mobile": 0,
 /******/ 			"admin/desktop/css/app": 0
 /******/ 		};
@@ -976,11 +981,11 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/js/admin/desktop/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app-mobile.scss")))
-/******/ 	__webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/front/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/front/app-mobile.scss")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","front/desktop/css/app","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/js/admin/desktop/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","front/desktop/css/app","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","front/desktop/css/app","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/admin/app-mobile.scss")))
+/******/ 	__webpack_require__.O(undefined, ["front/mobile/css/app-mobile","front/desktop/css/app","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/front/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["front/mobile/css/app-mobile","front/desktop/css/app","admin/mobile/css/app-mobile","admin/desktop/css/app"], () => (__webpack_require__("./resources/sass/front/app-mobile.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
