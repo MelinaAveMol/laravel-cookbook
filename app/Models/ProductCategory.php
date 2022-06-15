@@ -8,6 +8,7 @@ class ProductCategory extends Model
 {
     protected $guarded = [];
     protected $table = "product_categories";
+    // protected $with = ['products'];
 
     public  function products()
     {

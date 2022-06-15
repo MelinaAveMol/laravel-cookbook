@@ -5,24 +5,20 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
+use App\Models\Price;
 use App\Http\Requests\Admin\ProductRequest;
-use Debugbar;
-
 
 class ProductController extends Controller
-
 {
-
     protected $product;
+    protected $price;
 
-
-    public function __construct(Product $product) 
+    public function __construct(Product $product, Price $price) 
     {
 
         $this->product = $product;
+        $this->price = $price;
      
-
-       
     }
 
     public function index()
@@ -30,9 +26,8 @@ class ProductController extends Controller
         $view = View::make ('admin.pages.products.index')
         
         ->with ('product', $this->product)
-        ->with ('products', $this->product ->where('active' , 1)->get());
+        ->with ('products', $this->product->where('active',1)->get());
         
-
         if(request()->ajax()) {
             
             $sections = $view->renderSections();
@@ -46,7 +41,18 @@ class ProductController extends Controller
         return $view;
     }
 
-    public function store(CustoemerRequest $request )
+    public function create()
+    {
+       $view = View::make('admin.pages.products.index')
+        ->with('product', $this->product)
+        ->renderSections();
+
+        return response()->json([
+            'form' => $view['form']
+        ]);
+    }
+
+    public function store(ProductRequest $request )
     {            
         
 
@@ -54,7 +60,6 @@ class ProductController extends Controller
                 'id' => request('id')],[
                 'name' => request('name'),
                 'title' => request('title'),
-                'price' => request('price'),
                 'description' => request('description'),
                 'category_id' => request('category_id'),
                 'features' => request('features'),
@@ -62,9 +67,21 @@ class ProductController extends Controller
                 'active' => 1,
         ]);
 
+        $this->price->where('product_id', $product->id)->update([
+            'valid' => 0,
+        ]);
+
+        $this->price->create([
+            'product_id' => $product->id,
+            'base_price' => request('price'),
+            'tax_id' => request('tax_id'),
+            'valid' => 1,
+            'active' => 1,
+        ]);
+
         $view = View::make('admin.pages.products.index')
         ->with('products', $this->product->where('active', 1)->get())
-        ->with('product', $product)
+        ->with('product', $this->product)
         ->renderSections();        
 
         return response()->json([
@@ -75,13 +92,41 @@ class ProductController extends Controller
     }
 
 
-    // public function show(Product $product){
+    public function edit(Product $product)
+    {
+        $view = View::make('admin.pages.products.index')
+        ->with('product', $product)
+        ->with('products', $this->product->where('active', 1)->get());   
         
-    //     $view = View::make('front.pages.product.index')
-    //     ->with('products', $this->product->where('active', 1)->where('visible', 1)->get());
-                
-      
-        
-    
+        if(request()->ajax()) {
 
+            $sections = $view->renderSections(); 
+    
+            return response()->json([
+                'form' => $sections['form'],
+            ]); 
+        }
+                
+        return $view;
+    }
+
+    public function show(Product $product){
+
+    }
+
+    public function destroy(Product $product)
+    {
+        $product->active = 0;
+        $product->save();
+
+        $view = View::make('admin.pages.products.index')
+            ->with('product', $this->faq)
+            ->with('products', $this->faq->where('active', 1)->get())
+            ->renderSections();
+        
+        return response()->json([
+            'table' => $view['table'],
+            'form' => $view['form']
+        ]);
+    }
 }

@@ -13,22 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
-                
+        Schema::create('prices', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('surname');
-            $table->string('email');
-            $table->integer('telephone');
-            $table->string('address');
-            $table->string('zipcode');
-            $table->string('city');
-            $table->string('province');
-            $table->string('postal_code');
+            $table->decimal('base_price');
+            $table->integer('tax_id');
+            $table->text('valid');
+            $table->integer('product_id');
             $table->boolean('active');
+            $table->boolean('visible');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -37,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('prices');
     }
 };

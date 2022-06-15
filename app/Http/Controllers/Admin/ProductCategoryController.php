@@ -92,7 +92,43 @@ class ProductCategoryController extends Controller
         ]);
     }
 
-   
+    public function edit(ProductCategory $product_category)
+    {
+        $view = View::make('admin.pages.product_categories.index')
+        ->with('product_category', $product_categories)
+        ->with('product_categories', $this->product_category->where('active', 1)->get());   
+        
+        if(request()->ajax()) {
+
+            $sections = $view->renderSections(); 
+    
+            return response()->json([
+                'form' => $sections['form'],
+            ]); 
+        }
+                
+        return $view;
+    }
+
+    public function show(ProductCategory $product_categories){
+
+    }
+
+    public function destroy(ProductCategory $product_categories)
+    {
+        $product_categories->active = 0;
+        $product_categories->save();
+
+        $view = View::make('admin.pages.product_categories.index')
+            ->with('product_category', $this->product_category)
+            ->with('product_categories', $this->product_category->where('active', 1)->get())
+            ->renderSections();
+        
+        return response()->json([
+            'table' => $view['table'],
+            'form' => $view['form']
+        ]);
+    }
 
     
 }

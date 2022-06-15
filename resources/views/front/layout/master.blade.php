@@ -13,9 +13,11 @@
 
 <body>
     @include('front.layout.partials.header')
+    
     <main>
         @yield('content')
     </main>
+
     @include('front.layout.partials.js')
 </body>
 

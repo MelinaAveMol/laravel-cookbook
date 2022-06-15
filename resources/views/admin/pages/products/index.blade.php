@@ -51,7 +51,7 @@
     @if(isset($product))
     <form class="admin-form" action="{{route("products_store")}}">
 
-        <input type="hidden" name="id">
+        <input type="hidden" name="id" value="{{isset($product->id) ? $product->id : ''}}">
 
         <div class="panel">
             <div class="desktop-two-columns" id="color-panel">
@@ -73,14 +73,21 @@
             <div class="desktop-one-column">
                 <div class="form-group">
                     <div class="form-label">
-                        <label for="">Producto</label>
+                        <label for="">Nombre</label>
                     </div>
                     <div class="form-input">
+                        <input  type="text" name="name" value=" {{isset($product->name) ? $product->name : ''}}"> 
+                    </div>
+                </div>
+            </div>
 
-                        <div>
-                            <input  type="text" name="price" value=" "> 
-                        </div>
-
+            <div class="desktop-one-column">
+                <div class="form-group">
+                    <div class="form-label">
+                        <label for="">Título</label>
+                    </div>
+                    <div class="form-input">
+                        <input  type="text" name="title" value=" {{isset($product->title) ? $product->title : ''}}"> 
                     </div>
                 </div>
             </div>
@@ -91,8 +98,13 @@
                             <label for="">Categoria</label>
                         </div>
                     <div class="form-input"> 
-                        <input  type="text" name="category" value=""> {{isset($product->product_category) ? $product->category : ''}}
-                        
+                        <select name="category_id">
+                            <option value="">Seleccione una categoria</option>
+                            @if(isset($product_categories))
+                                @foreach($product_categories as $category)
+                                    <option value="{{$category->id}}" {{ isset($product->category->id ) && $product->category->id == $category->id ? 'selected' : ''}}>{{$category->title}}</option>
+                                @endforeach
+                            @endif
                         </select> 
                     </div>
                 </div>
@@ -101,11 +113,25 @@
                 <div class="form-label">
                     <label for="">Precio</label>
                 </div>
-                <div class="form-select">
-                    <input  type="number" name="price" value="{{isset($product->price) ? $product->price : ''}}"> 
+                <div class="form-input">
+                    <input  type="number" name="price" value="{{isset($product->prices->first()->base_price) ? $product->prices->first()->base_price : '' }}">
                 </div>
             </div>
-
+            <div class="form-group">
+                <div class="form-label">
+                    <label for="">IVA</label>
+                </div>
+                <div class="form-select">
+                    <select name="tax_id">
+                        <option value="" disabled>--Seleccione un IVA--</option>
+                            @if(isset($taxes))
+                                @foreach($taxes as $tax)
+                                    <option value="{{$tax->id}}" {{ isset($product->prices->first()->tax->id)  && $product->prices->first()->tax->id == $tax->id ? 'selected' : ''}}>{{$tax->type}}</option>
+                                @endforeach
+                            @endif
+                    </select>
+                </div>
+            </div>
             <div class="text-editor">
                 <div>
                     <label for="">Descripción</label>

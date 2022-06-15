@@ -4,8 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Trolley extends Model
-{
+class Tax extends Model {
+    
     protected $guarded = [];
-    protected $table = "trolley";
+    protected $table = "taxes";
+
+    
+
 }
+
+   

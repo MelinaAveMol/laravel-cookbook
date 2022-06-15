@@ -1,10 +1,10 @@
 {
     "/admin/desktop/js/app.js": "/admin/desktop/js/app.js?id=3f5a87da96d9ae7a83e6695ba1e103de",
     "/admin/mobile/js/app.js": "/admin/mobile/js/app.js?id=8bc004811cddba5f74bbec96d92e9c97",
-    "/front/desktop/js/app.js": "/front/desktop/js/app.js?id=07604f262b39ad6a2a4d578525bd4915",
+    "/front/desktop/js/app.js": "/front/desktop/js/app.js?id=9dd9f437f475fa2475791994faf685cc",
     "/front/mobile/js/app.js": "/front/mobile/js/app.js?id=4ba552e3b58bc848067003814fe179d3",
-    "/front/desktop/css/app.css": "/front/desktop/css/app.css?id=61209da51332f907b7d28ed4f76cff9a",
-    "/admin/mobile/css/app-mobile.css": "/admin/mobile/css/app-mobile.css?id=a15f2f4bfaf299532886f3252f575e10",
-    "/admin/desktop/css/app.css": "/admin/desktop/css/app.css?id=61ab47686b4e567c39dfdbf8a3bac8e1",
-    "/front/mobile/css/app-mobile.css": "/front/mobile/css/app-mobile.css?id=be0d05b60ddf4fa5a3b72ef9708bd181"
+    "/front/mobile/css/app-mobile.css": "/front/mobile/css/app-mobile.css?id=be0d05b60ddf4fa5a3b72ef9708bd181",
+    "/front/desktop/css/app.css": "/front/desktop/css/app.css?id=b04e78919dbc8fb34a4a9d03cc6f9d41",
+    "/admin/mobile/css/app-mobile.css": "/admin/mobile/css/app-mobile.css?id=347e876724b56998435ac52d19cd0ba3",
+    "/admin/desktop/css/app.css": "/admin/desktop/css/app.css?id=084e98a6078d7f02257c6c55013c829d"
 }

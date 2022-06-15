@@ -25,37 +25,19 @@ class ViewComposerServiceProvider extends ServiceProvider
     
     {
 
-        // $agent = new Agent();
-        
-        
-
         view()->composer( [
             'admin.pages.products.index'],
             'App\Http\ViewComposers\Admin\ProductCategories' 
-            
-
         );
 
-        // view()->composer( [
-        //     'admin.pages.products.'],
-        //     'App\Http\ViewComposers\Admin\ProductCategories' 
-            
-
-        // );
-        // view()->composer( [
-        //     'admin.pages.products.'],
-        //     'App\Http\ViewComposers\Admin\ProductCategories' 
-            
-
-        // );
-        // view()->composer( [
-        //     'admin.pages.products.'],
-        //     'App\Http\ViewComposers\Admin\ProductCategories' 
-            
-
-        // );
-
-
+        view()->composer( [
+            'front.pages.products.index'],
+            'App\Http\ViewComposers\Front\ProductCategories' 
+        );
+        view()->composer( [
+            'admin.pages.products.index'],
+            'App\Http\ViewComposers\Admin\Taxes' 
+        );
 
     }
     

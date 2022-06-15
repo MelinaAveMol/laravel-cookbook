@@ -15,22 +15,16 @@
 @import "layout/mobile/columns";
 
 // Pages
-@import "pages/mobile/_home";
 @import "pages/mobile/_contact";
-@import "pages/mobile/_checkout";
-@import "pages/mobile/_trolley";
+@import "pages/mobile/_check";
+@import "pages/mobile/_shoppingcart";
 @import "pages/mobile/_product";
 @import "pages/mobile/_products";
-@import "pages/mobile/_faqs";
 
 // Components
-@import "components/mobile/tabs";
 // @import "components/mobile/hamburger";
-@import "components/mobile/plusMinusButton";
-@import "components/mobile/tabs";
 // @import "components/mobile/pickedTabs";
 // @import "components/mobile/trolleyResumeTable";
-@import "components/mobile/accordion";
 
 // @import "components/mobile/categories";
 

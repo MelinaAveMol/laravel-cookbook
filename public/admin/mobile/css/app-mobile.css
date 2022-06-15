@@ -631,6 +631,257 @@ footer .footer-element .footer-element-socialmedia svg {
   width: 100%;
 }
 
+.contact {
+  background: rgb(89, 171, 227);
+}
+.contact .contact-title {
+  margin: 1rem auto 1rem auto;
+  text-align: center;
+}
+.contact .contact-title h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+.contact .contact-options {
+  width: 90%;
+  margin: auto;
+  background: #2a70d5;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.contact .contact-options .contact-option {
+  margin-bottom: 1rem;
+}
+.contact .contact-options .contact-option h3 {
+  font-size: 1.3rem;
+}
+.contact .contact-options .contact-option h3 svg {
+  width: 7%;
+}
+
+.check {
+  background: #FF6347;
+}
+.check .check-title {
+  text-align: center;
+}
+.check .checkout-form {
+  width: 90%;
+  margin: auto;
+}
+.check .pay {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.check .pay .payment {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.check .pay .payment table {
+  border: 1px solid white;
+}
+.check .pay .payment table tr {
+  color: white;
+}
+.check .pay .payment table tr th {
+  padding: 1rem 0rem 1rem 0rem;
+  background: white;
+  color: black;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.check .pay .payment table tr td {
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.check .pay .pay-options div {
+  padding-bottom: 2rem;
+}
+.check .pay .pay-options div label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.check .pay .pay-options .pay-button {
+  text-align: center;
+}
+.check .pay .pay-options .pay-button button {
+  background: rgb(89, 171, 227);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
+}
+.check .pay .pay-options .pay-button button:hover {
+  background: #FF9A33;
+  transition: 0.2s all;
+}
+
+.cart {
+  background: #FF6347;
+}
+.cart .cart-title {
+  text-align: center;
+}
+.cart .cart-title h2 {
+  padding: 2rem;
+}
+.cart .resume table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.cart .resume table tr {
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  margin-right: 1rem;
+  text-align: center;
+}
+.cart .resume table tr td {
+  padding: 0.5rem;
+}
+.cart .resume table tr td input {
+  width: 10%;
+}
+.cart .resume table tr .amount {
+  display: flex;
+  width: 100%;
+}
+.cart .resume table tr .amount .less button {
+  border: 1px solid #c4402f;
+  border-radius: 4px;
+  background-color: #CC4331;
+  box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px -1px #af3a2a;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: all 0.15s ease-in-out;
+}
+.cart .resume table tr .amount .number {
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0rem 1rem 0rem 1rem;
+}
+.cart .resume table tr .amount .number .show {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.cart .resume table tr .amount .more button {
+  border: 1px solid #c4402f;
+  border-radius: 4px;
+  background-color: #CC4331;
+  box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px -1px #af3a2a;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: all 0.15s ease-in-out;
+}
+.cart .resume table tr th {
+  padding: 1rem;
+}
+.cart .resume table tr img {
+  max-width: 100%;
+}
+.cart .resume table tr:first-child {
+  border-bottom: 0.6rem solid white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.cart .payment {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.cart .payment table {
+  border: 1px solid white;
+}
+.cart .payment table tr {
+  color: white;
+}
+.cart .payment table tr th {
+  padding: 1rem 0rem 1rem 0rem;
+  background: white;
+  color: black;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.cart .payment table tr td {
+  padding: 0.8rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.cart .payment table tr:last-child {
+  border-top: 1px solid white;
+}
+.cart .payment .payment-buttons {
+  width: 75%;
+  display: flex;
+  margin-top: 1rem;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.cart .payment .payment-buttons .back {
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.cart .payment .payment-buttons .back button {
+  background: rgb(89, 171, 227);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
+}
+.cart .payment .payment-buttons .back button:hover {
+  background: #FF9A33;
+  transition: 0.2s all;
+}
+.cart .payment .payment-buttons .buy {
+  margin-top: 1rem;
+}
+.cart .payment .payment-buttons .buy button {
+  background: rgb(89, 171, 227);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
+}
+.cart .payment .payment-buttons .buy button:hover {
+  background: #FF9A33;
+  transition: 0.2s all;
+}
+
 .product {
   background: #FF6347;
 }
@@ -797,7 +1048,7 @@ footer .footer-element .footer-element-socialmedia svg {
   width: 100%;
 }
 .product .product-information .buy button {
-  background: hsl(226deg, 63%, 45%);
+  background: rgb(89, 171, 227);
   border-radius: 0.5rem;
   border: white 3px solid;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -952,173 +1203,4 @@ footer .footer-element .footer-element-socialmedia svg {
   color: #fff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 0px #c1524e;
-}
-
-.admin {
-  background: #FF6347;
-}
-.admin .title {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.admin .title h2 {
-  padding-top: 0.5rem;
-}
-.admin .registers {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 1rem;
-  padding: 0.5rem auto 0.5rem auto;
-  background: white;
-  border-top: hsl(0deg, 4%, 85%) 5px solid;
-  border-bottom: hsl(0deg, 4%, 85%) 5px solid;
-}
-.admin .registers .registers-dates label {
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  color: black;
-}
-.admin .registers .registers-icons {
-  text-align: end;
-}
-.admin .registers .registers-icons span svg {
-  width: 25%;
-}
-.admin .register-data {
-  width: 75%;
-  margin: auto;
-  margin-bottom: 1rem;
-}
-.admin .register-data div {
-  display: flex;
-}
-.admin .register-data div p {
-  padding-left: 1rem;
-  color: black;
-}
-.admin .register-data ul {
-  display: flex;
-}
-.admin .register-data ul li {
-  padding-left: 1rem;
-  color: whitesmoke;
-  cursor: pointer;
-}
-.admin .register-navegator {
-  display: flex;
-  position: absolute;
-  top: 80vh;
-}
-.admin .register-navegator p {
-  padding-left: 1rem;
-  color: white;
-}
-.admin .admin-panel {
-  background: white;
-}
-.admin .admin-panel #color-panel {
-  background: hsl(0deg, 4%, 85%);
-}
-.admin .admin-panel .gestion .contents {
-  display: flex;
-  justify-content: center;
-}
-.admin .admin-panel .gestion .contents button {
-  border-style: none;
-  padding: 2.59rem;
-  cursor: pointer;
-  background: hsl(0deg, 4%, 85%);
-}
-.admin .admin-panel .gestion .contents :first-child {
-  background: darkcyan;
-  color: white;
-}
-.admin .admin-panel .options {
-  text-align: center;
-}
-.admin .admin-panel .options .element {
-  width: 40%;
-  margin: auto;
-  margin-top: 0.5rem;
-}
-.admin .admin-panel .options .element span svg {
-  cursor: pointer;
-  width: 40%;
-}
-.admin .admin-panel .category {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.admin .admin-panel .category .catalogue {
-  margin: auto;
-  width: 40%;
-  margin-left: 2rem;
-}
-.admin .admin-panel .category .catalogue label {
-  color: black;
-  font-weight: 600;
-  padding: 0.3rem 5%;
-}
-.admin .admin-panel .category .catalogue select {
-  color: black;
-  padding: 0.3rem;
-  transition: all 0.4s;
-  border-radius: 0.5rem;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
-  border: white 3px solid;
-  width: 100%;
-}
-.admin .admin-panel .category .name {
-  margin: auto;
-  width: 50%;
-}
-.admin .admin-panel .category .name label {
-  color: black;
-  font-weight: 600;
-  padding: 0.3rem 5%;
-}
-.admin .admin-panel .category .name input {
-  padding: 0.3rem 5%;
-  transition: all 0.4s;
-  border-radius: 0.5rem;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
-  border: white 3px solid;
-  width: 70%;
-}
-.admin .admin-panel .language {
-  width: 80%;
-  margin: auto;
-  background: hsl(0deg, 4%, 85%);
-}
-.admin .admin-panel .language button {
-  border: none;
-  background: darkcyan;
-  padding: 1.4rem;
-  color: white;
-  cursor: pointer;
-}
-.admin .admin-panel .description {
-  width: 75%;
-  margin: 1rem auto 1rem;
-  text-align: center;
-}
-.admin .admin-panel .description label {
-  color: black;
-  font-weight: 600;
-}
-.admin .admin-panel .description input {
-  border-style: none;
-  border-bottom: 2px hsl(0deg, 4%, 85%) solid;
-  width: 100%;
-}
-.admin .admin-panel .text-editor {
-  width: 75%;
-  margin: auto;
-  padding-bottom: 5rem;
-}
-.admin .admin-panel .text-editor textarea {
-  width: 50%;
 }
